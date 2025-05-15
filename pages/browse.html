@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Search Bar & Genre Filters -->
+        <div class="controls">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search movies...">
+                <button id="searchBtn">🔍</button>
+            </div>
+            <div class="genre-filters">
+                <button class="genre-btn" data-genre="all">All</button>
+                <button class="genre-btn" data-genre="action">Action</button>
+                <button class="genre-btn" data-genre="comedy">Comedy</button>
+                <button class="genre-btn" data-genre="drama">Drama</button>
+            </div>
+        </div>
+
+        <!-- Movies Grid -->
+        <div class="movies-grid" id="moviesGrid">
+            <!-- Sample Movies -->
+            <div class="movie-card" data-genre="action">
+                <img src="images/movie1.jpg" alt="Movie 1">
+                <div class="movie-info">
+                    <h3>Movie Title 1</h3>
+                    <p>⭐ 8.5/10</p>
+                </div>
+            </div>
+            <div class="movie-card" data-genre="comedy">
+                <img src="images/movie2.jpg" alt="Movie 2">
+                <div class="movie-info">
+                    <h3>Movie Title 2</h3>
+                    <p>⭐ 7.9/10</p>
+                </div>
+            </div>
+            <div class="movie-card" data-genre="drama">
+                <img src="images/movie3.jpg" alt="Movie 3">
+                <div class="movie-info">
+                    <h3>Movie Title 3</h3>
+                    <p>⭐ 9.0/10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Movie Details Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalRating"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

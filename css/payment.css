@@ -1,0 +1,122 @@
+.payment-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.booking-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.payment-options {
+    margin: 25px 0;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.payment-method-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.payment-method-btn:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.payment-method-btn img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.pay-now-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.pay-now-btn:hover {
+    background-color: #0069d9;
+}
+
+#card-element {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Google Pay button styling */
+#google-pay-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+#google-pay-button:hover {
+    background-color: #333;
+    border: none;
+}
+
+#google-pay-button img {
+    height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .payment-methods {
+        flex-direction: column;
+    }
+    
+    .payment-method-btn {
+        width: 100%;
+    }
+}

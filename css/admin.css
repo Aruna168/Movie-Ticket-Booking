@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    background: url('../assets/images/admin-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Glassmorphic Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 220px;
+    display: none;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.hamburger-menu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hamburger-menu a:last-child {
+    border-bottom: none;
+}
+
+.hamburger-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Welcome Card */
+.welcome-card {
+    position: relative;
+    margin: 80px auto;
+    width: 60%;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Profile Section */
+.profile-section {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Smooth fade effect */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-fluid {
+    flex: 1;
+    overflow: auto; /* Ensures live booking status remains visible */
+}

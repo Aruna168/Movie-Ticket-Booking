@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logout-btn {
+    background: #e63946;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+/* Movies Section */
+.movies {
+    margin: 40px;
+}
+
+.movies h2 {
+    text-align: center;
+}
+
+.movie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie-card {
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+}
+
+.movie-card button {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Search Section */
+.search {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.search input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search button {
+    background: #ffcc00;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}

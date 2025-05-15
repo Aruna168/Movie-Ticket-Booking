@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script defer src="js/animations.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #584528;
+            padding: 15px;
+            color: white;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            background: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .search-bar button:hover {
+            background: #e63e00;
+        }
+        .nav-links .btn {
+            text-decoration: none;
+            color: white;
+            background: #ff4500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .nav-links .btn:hover {
+            background: #e63e00;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+            background: #ddd;
+        }
+        .filters label, .filters select {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px;
+            color: white;
+            background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+        }
+        
+        .movies, .offers, .authentication {
+            padding: 20px;
+            text-align: center;
+        }
+        .movie-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .movie-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background: #3c3323;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Movie Booking</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search movies...">
+            <button type="submit">🔍</button>
+        </div>
+        <div class="nav-links">
+            <a href="login.html" class="btn">Login</a>
+            <a href="register.html" class="btn">Register</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Experience Movies Like Never Before</h1>
+        <p>Book your tickets with ease and enjoy the best movie experience.</p>
+        <a href="pages/movies.html" class="btn">Browse Movies</a>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <label for="genre">Genre:</label>
+        <select id="genre">
+            <option value="all">All</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+        </select>
+
+        <label for="rating">Rating:</label>
+        <select id="rating">
+            <option value="all">All</option>
+            <option value="4">4+ Stars</option>
+            <option value="3">3+ Stars</option>
+            <option value="2">2+ Stars</option>
+        </select>
+
+        <label for="price">Price:</label>
+        <select id="price">
+            <option value="all">All</option>
+            <option value="low">Under $10</option>
+            <option value="mid">$10 - $20</option>
+            <option value="high">Above $20</option>
+        </select>
+    </section>
+
+    <!-- Now Showing -->
+    <section class="movies">
+        <h2>Now Showing</h2>
+        <div class="movie-container">
+            <div class="movie-card">
+                <img src="assets/images/movie1.jpg" alt="Movie 1">
+                <h3>the Dark Knight</h3>
+                <p>Genre | Duration</p>
+                <p>Rating: ⭐⭐⭐⭐</p>
+                <p>Price: $10</p>
+                <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="assets/images/movie2.jpg" alt="Movie 2">
+                <h3>The Matrix</h3>
+                <p>Genre | Duration</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+                <p>Price: $12</p>
+                <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="assets/images/movie3.jpg" alt="Movie 1">
+                <h3>Interstellar</h3>
+                <p>Genre | Duration</p>
+                <p>Rating: ⭐⭐⭐⭐</p>
+                <p>Price: $10</p>
+                <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="assets/images/movie4.jpg" alt="Movie 1">
+                <h3>Gladiator II</h3>
+                <p>Genre | Duration</p>
+                <p>Rating: ⭐⭐⭐⭐</p>
+                <p>Price: $10</p>
+                <button class="book-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Offers -->
+    <section class="offers">
+        <h2>Exclusive Offers</h2>
+        <p>Get special discounts and cashback offers on movie tickets.</p>
+        <button class="offers-btn">View Offers</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Movie Ticket Booking. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/scrollEffect.js" defer></script>
+</body>
+</html>

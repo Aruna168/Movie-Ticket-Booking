@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Movies</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to CSS -->
+    <script src="../js/scripts.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Browse Movies</h1>
+        <div id="browse-movies">
+            <input type="text" id="searchBar" placeholder="Search movies...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="action">Action</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="thriller">Thriller</option>
+                <option value="horror">Horror</option>
+                <option value="comedy">Comedy</option>
+            </select>
+            <div id="movieList" class="movies-container"></div>
+        </div>        
+    </header>
+
+    <!-- Movie List -->
+    <section class="movie-list" id="movieList">
+        <!-- Movies will be dynamically added here -->
+    </section>
+
+</body>
+</html>

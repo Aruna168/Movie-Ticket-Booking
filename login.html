@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <div class="input-container">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>                
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="auth-link">
+            <p>Not registered? <a href="register.html">Register now</a></p>
+        </div>
+    </div>
+
+    <!-- Floating 3D Background Animation -->
+    <div class="bg-animation">
+        <div class="circle" style="width: 100px; height: 100px; top: 10%; left: 15%;"></div>
+        <div class="circle" style="width: 80px; height: 80px; top: 50%; left: 70%;"></div>
+        <div class="circle" style="width: 120px; height: 120px; top: 80%; left: 30%;"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #b5c0cf;  /* Deep Gray */
+    color: #EAEAEA;  /* Soft White */
+    margin: 0;
+    padding: 0;
+}
+/* Hero Section with Image */
+.hero {
+    background: linear-gradient(rgba(77, 168, 196, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/banner.jpeg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #E63946;
+    padding: 12px 24px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.hero .btn:hover {
+    background: #D62839;
+    transform: scale(1.1);
+}
+
+/* Now Showing Movies */
+.movies {
+    background: #e6eaec;  /* Slightly Lighter Gray */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.movies h2 {
+    font-size: 2.5em;
+    color: #ffd500; /* Gold */
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 3D Hover Effect for Movie Cards */
+.movie-card {
+    background: #384c60;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+.movie-card:hover {
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Styling for Movie Cards */
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover img {
+    transform: scale(1.05);
+}
+
+.movie-card h3 {
+    font-size: 1.5em;
+    color: #FFD700; /* Gold */
+}
+
+.movie-card p {
+    font-size: 1em;
+    color: #000; /* Black or a darker color */
+}
+
+.hero, .movies {
+    display: block;
+}
+
+.book-btn {
+    background: #E63946;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.book-btn:hover {
+    background: #D62839;
+}
+
+/* Offers Section */
+.offers {
+    background: #2C2C2C;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.offers h2 {
+    font-size: 2.5em;
+    color: #FFD700; /* Gold */
+}
+
+.offers-btn {
+    background: #FFD700;
+    color: #2C2C2C;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.offers-btn:hover {
+    background: #E6C300;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Forces all cards to stretch equally */
+    gap: 20px;
+  }
+  
+  .movie-card {
+    width: 250px;  /* Set equal width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 15px;
+    background: #fff;
+    flex: 1 1 auto; /* Ensures all cards expand equally */
+    min-height: 400px; /* Minimum height for uniformity */
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 200px; /* Forces images to be the same height */
+    object-fit: cover;
+  }
+  
+  .movie-card .content {
+    flex-grow: 1; /* Ensures content expands equally */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* User Type Dropdown */
+.user-type {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Fix dropdown text color */
+.user-type option {
+    color: black;
+}
+
+/* Hover Effect */
+.user-type:hover {
+    transform: scale(1.03);
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Search Bar */
+#searchBar {
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Movie List */
+.movie-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Movie Card */
+.movie-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+/* Movie Image */
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Book Now Button */
+.book-btn {
+    background: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.book-btn:hover {
+    background: #ff2e00;
+}
